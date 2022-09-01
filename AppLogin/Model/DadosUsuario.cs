@@ -7,16 +7,10 @@ using Xamarin.Forms;
 
 namespace AppLogin.Model
 {
-    public class DadosUsuario : ContentPage
+    public class DadosUsuario
     {
-        public DadosUsuario()
-        {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
-                }
-            };
-        }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Nome { get; set; }
     }
 }
